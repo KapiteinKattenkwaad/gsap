@@ -19,17 +19,12 @@ body {
     width: 150px;
     height: 20vh;
     background: fuchsia;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 10rem;
-    left: 10rem;
-    z-index: 2;
+  
+
 }
 
 .square2 {
-    margin-top: 560px;
+    margin-top: 160px;
     width: 150px;
     height: 150px;
     background: blueviolet;
