@@ -19,6 +19,13 @@ body {
     width: 150px;
     height: 20vh;
     background: fuchsia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10rem;
+    left: 10rem;
+    z-index: 2;
 }
 
 .square2 {
@@ -30,4 +37,10 @@ body {
 
 .red {
     background: red;
+}
+
+.title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }

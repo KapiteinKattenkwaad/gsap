@@ -2,17 +2,29 @@
 gsap.registerPlugin(ScrollTrigger)
 
 gsap.to(".square", {
-    x: 300,
+
+    scale: .6,
     duration: 1,
     scrollTrigger: {
         trigger: ".square",
-        start: "top 30%",
-        end: () => `+=${document.querySelector('.square').offsetHeight}`, //this will get the end value dynamically from square element, even if its set to vh or something
-        toggleClass: 'red',
-        toggleActions: "restart pause resume complete",
-        //all the values u can use: play pause resume reverse restart reset complete none
-        //are being used for these actions: onEnter, onLeave, onEnterBack, onLeaveBack
+        start: "top 80%",
+        end: "top 30%",
+        scrub: true, //if you make this a number, it smoothes it out
+        toggleActions: "restart none none none",
         markers: true
+    }
+})
+
+gsap.to(".title", {
+    x: 300,
+    duration: .7,
+    scrollTrigger: {
+        trigger: ".title",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 4,
+        toggleActions: "restart none none none",
+    
     }
 })
 
