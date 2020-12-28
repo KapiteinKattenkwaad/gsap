@@ -19,5 +19,11 @@ body {
     width: 150px;
     height: 20vh;
     background: fuchsia;
+
+}
+
+.box-red {
+    background: crimson;
+
 }
 
